@@ -18,6 +18,9 @@ class PeopleStats {
         } catch (IOException e) {
             throw new IllegalStateException(e);
         }
+        public long count() {
+            return people.size();
+        }
     }
 
 class Person {
@@ -36,7 +39,3 @@ class Person {
         return  lastName;
     }
 }
-
-    public long count() {
-        return people.size();
-    }
